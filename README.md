@@ -1,6 +1,7 @@
 USE AT YOUR OWN RISK. this script comes as is.
 
 referrence for OMSA CLI:  https://goo.gl/ZTi0pk ( had to shorten the Dell URL) 
+
 referrence for MS Tasksch:  https://msdn.microsoft.com/en-us/library/windows/desktop/bb736357(v=vs.85).aspx 
 
 must have OpenManage installed. 
