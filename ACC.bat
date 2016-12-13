@@ -1,7 +1,5 @@
 :: color and windows size
-
 @echo off
-
 color F0
 
 mode con:cols=50 lines=15
@@ -62,16 +60,6 @@ echo.
 SET /P VD=please select VD (1,2,3,4..etc)
 
 if [%CN%]==[] (Set CN=0)
-
-echo.
-
-:: set the rate of the consistancy check default is 30%
-
-SET input=
-
-Set /p SCC= set consistancy check rate (0-100): 
-
-if [%SCC%]==[] (Set SCC=30)
 
 echo.
 
