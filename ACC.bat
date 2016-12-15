@@ -65,14 +65,13 @@ echo.
 
 ::create a task for every month
 
-schtasks /Create /tn "ConsistencyCheck virtual Disk %VD% Controller %CN%" /tr "omconfig storage vdisk action=checkconsistency controller=%CN% vdisk=%VD% && omconfig storage controller action=setcheckconsistencyrate controller=%CN% rate=%SCC% " /sc MONTHLY 
+schtasks /Create /tn "ConsistencyCheck virtual Disk %VD% Controller %CN%" /tr "omconfig storage vdisk action=checkconsistency controller=%CN% vdisk=%VD% " /sc MONTHLY 
 
 schtasks /Run /tn "ConsistencyCheck virtual Disk %VD% Controller %CN%"
 
 mode con:cols=85 lines=30
 
 schtasks /QUERY /tn "ConsistencyCheck virtual Disk %VD% Controller %CN%"
-
 
 
 pause
